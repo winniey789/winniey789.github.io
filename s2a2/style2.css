@@ -116,7 +116,7 @@ body {
 }
 
 .fish img {
-    width: 15vw; 
+    width: 10vw; 
     height: 10vh;
     transition: transform 0.3s ease;
 }
