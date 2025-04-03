@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Barriecito&family=Barrio&family=Chonburi&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Display:ital,wght@0,100..900;1,100..900&display=swap');
+
+html{
+    background-color: #f1e7cb;
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    background-color: f1e7cb;
+    padding: 0px;
+    margin: 0px;
+}
+
+h1 {
+    font-family: 'Barriecito';
+    font-size: 60px;
+    text-align: center;
+    font-weight: 600;
+    padding-top: 40px;
+    margin-bottom: 0px;
+}
+
+h2 {
+    font-family: 'Barriecito';
+    font-size: 22px;
+    text-align: center;
+    font-weight: 100;
+    margin-top: 10px;
+}
+
+#box {
+    background-color: #e65516; 
+    width: 100vw; 
+}
+
+.heading {
+    padding-left: 20%;
+    padding-right: 20%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-top: 50px; 
+    color: white; 
+    text-align: center; 
+    font-size: 24px;
+}
