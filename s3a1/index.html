@@ -67,11 +67,26 @@
 
 <br>
 <br>
-<h2><span style="font-size: 30px;">Video</h2></span>
+<h2><span style="font-size: 30px;">Tutorial</h2></span>
 
 <div id="box2">
     <video width="600" controls>
         <source src="audio/demo.mp4" type="video/mp4">
     </video>
 </div>
+
+<h2><span style="font-size: 30px;">Class Soundtrack</h2></span>
+<div id="box3">
+   <audio id="audio" src="audio/class_soundtrack.mp3"></audio>
+    <button id="playButton">Click here</button>
+
+    <script>
+        const playButton = document.getElementById('playButton');
+        const audio = document.getElementById('audio');
+        playButton.addEventListener('click', function() {
+            audio.play();
+        });
+    </script>
+</div>
+
 
