@@ -57,13 +57,8 @@ h3 {
     height: 400px;
     padding: 0px;
     margin: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.placeholder {
-    position:absolute;
-    left: 25%;
-    background-color: #b8ae94; 
-    width: 50%; 
-    height: 300px;
-    padding: 0px;
-}
