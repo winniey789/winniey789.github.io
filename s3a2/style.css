@@ -15,7 +15,6 @@ body {
 
  .section1 {
   background-image: url('images/vanpelt.png');
-  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   min-height: 60vh;
