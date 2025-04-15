@@ -14,6 +14,7 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   min-height: 60vh;
+  width: auto;
   position: relative;
   display: flex;
   justify-content: center;
@@ -24,16 +25,17 @@ body {
 
 .section1_1 {
   background-color: white;
-  width: 50%;
+  width: fit-content;
   height: fit-content;
   position: relative;
-  padding: 10%;
+  padding: 5%;
   animation: slideInFromLeft 1s ease-out forwards;
 }
 
 .section2 {
   background-color: #141412;
   height: fit-content;
+  width: auto;
   position: relative;
   padding: 10%;
   display: flex;
