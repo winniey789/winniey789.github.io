@@ -1,6 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Khand:wght@300;400;500;600;700&family=Noto+Sans+Display:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&display=swap');
 
+* {
+  box-sizing: border-box;
+}
 
 body {
    text-align: center;
@@ -27,13 +30,13 @@ body {
 
 .section1_1 {
   background-color: white;
-  height: fit-content;
-  width: auto;
-  position: relative;
-  padding: 5%;
+  max-width: 600px;
+  width: 90%;
+  padding: 2rem;
+  margin: auto;
   display: flex;
   flex-direction: column;
-  align-items: center; 
+  align-items: center;
   justify-content: center;
   animation: slideInFromLeft 1s ease-out forwards;
 }
