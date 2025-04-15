@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Khand:wght@300;400;500;600;700&family=Noto+Sans+Display:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&display=swap');
+
+
+body {
+   text-align: center;
+   justify-items: center;
+   align-items:center;
+ }
+
+
+.section2{
+   background-color: #141412;
+   width:110%;
+   height:fit-content;
+   position:relative;
+   padding:10%;
+}
+
+
+.mockup{
+   position: relative;
+   height: auto;
+   width: 3vw;
+   transition: transform 0.3s ease;
+}
+
+
+.mockup:hover{
+   transform: scale(1.2);
+}
+
+
+.header2 {
+   font-family: "Khand", sans-serif;
+   font-weight: 700;
+   font-size: 5vw;
+   font-style: normal;
+   color: white;
+   line-height: 0;
+ }
+
+
+ .subheader2 {
+   font-family: "Instrument Serif", serif;
+   font-weight: 400;
+   font-size:3vw;
+   font-style: normal;
+   color: white;
+   line-height: 0;
+ }
+ .button {
+   position:relative;
+   width: 10vw;
+   height: fit-content;
+   font-family: "Khand", sans-serif;
+   font-weight: 700;
+   background-color: white;
+   border-radius: 20px;
+   padding:10px;
+   font-size: 2vw;
+   text-decoration: none;
+   animation: fadein 10s ease-in-out forwards;
+}
+
+
+.button::before {
+   content: "Connect";
+   color:black;
+}
+
+
+.button:hover {
+   content:"Connect";
+   color: white;
+}
