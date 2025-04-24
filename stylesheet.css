@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Barriecito&family=Barrio&family=Chonburi&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+
+#text {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 5;
+    color: black;
+    font-size: 24px;
+    font-family: 'Barriecito';
+    padding: 8px;
+    border-radius: 4px;
+  }
+
+
+
+
