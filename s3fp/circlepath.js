@@ -16,7 +16,7 @@ function setup() {
 }
 
 function draw() {
-  if (mouseIsPressed && mouseButton == LEFT) {
+  if (mouseIsPressed) {
     var d = dist(x, y, mouseX, mouseY);
     var size = min_size + d / 2;
     gap = size;
@@ -37,6 +37,5 @@ function mousePressed() {
 }
 
 function keyReleased() {
-  if (key == 's' || key == 'S') saveCanvas('circle-drawing', 'png');
   if (keyCode == DELETE || keyCode == BACKSPACE) background(255);
 }
