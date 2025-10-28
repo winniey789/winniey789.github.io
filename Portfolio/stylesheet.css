@@ -1,0 +1,52 @@
+body{
+    background-color: #A7292F;
+}
+
+.navbar {
+    display: flex;
+    justify-content: flex-start;
+    gap: 16px;
+    padding: 16px;
+    padding-left: 26px;
+    background-color: #E9DEDC;
+}
+
+.nav-button {
+    background: none;
+    color: #203D87;
+    border: 2px solid #E9DEDC;
+    padding: 8px 16px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.nav-button:hover {
+    background-color: #203D87;
+    color: white;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+    margin: 32px;
+}
+
+.card {
+    width: 300px;
+    height: 250px;
+    background: #fffdef;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    box-shadow: 0 4px 8px #771217;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px #4f080b;
+}
