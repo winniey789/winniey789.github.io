@@ -1,0 +1,281 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #fff;
+    color: #111;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* ----------------------------------------------------
+   NAV BAR
+---------------------------------------------------- */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+header * {
+    font-family: 'DM Serif Text', serif;
+}
+
+nav a {
+    margin-left: 2rem;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: gray;
+}
+
+
+/* ----------------------------------------------------
+   INTRO SECTION
+---------------------------------------------------- */
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+    text-align: left;
+    padding: 0 2rem;
+}
+
+/* Intro title */
+.intro h1 {
+    font-family: 'DM Serif Text', serif;
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+/* Intro brief */
+.intro p {
+    font-family: 'Inter', sans-serif;
+    font-size: 1.2rem;
+    max-width: 600px;
+    color: #555;
+}
+
+
+/* ----------------------------------------------------
+   PROJECT GRID 
+---------------------------------------------------- */
+
+.work-section {
+    padding: 2rem 4rem 0 4rem;
+}
+
+.work-heading {
+    font-family: 'DM Serif Text', serif;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.work-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+    gap: 2.5rem;
+    padding: rem;
+    animation: fadeIn 0.8s ease-out;
+
+}
+
+.project-card {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.img-wrapper {
+    width: 100%;
+    overflow: hidden;
+    border-radius: 12px;     
+}
+
+.img-wrapper img {
+    width: 100%;
+    display: block;
+    border-radius: 12px;     
+    transition: transform 0.5s ease;
+    cursor: pointer;
+}
+
+.img-wrapper:hover img {
+    transform: scale(1.03);
+}
+
+.project-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'DM Serif Text', serif;
+    font-size: 1rem;
+    margin-top: 0.4rem;
+}
+
+.project-title {
+    font-family: 'DM Serif Text', serif;
+    font-size: 1.1rem;
+}
+
+.project-title:hover {
+    color: gray;
+}
+.project-date {
+    font-family: 'DM Serif Text', serif;
+    font-size: 1.1rem;
+    color: black; /* can change this color if u want to */
+}
+
+.project-description {
+    font-family: 'Inter', sans-serif;
+    font-size: 0.9rem;
+    color: #777;
+    line-height: 1.4;
+    margin-top: -0.9rem;
+}
+
+.coming-soon .img-wrapper {
+    position: relative;
+}
+
+.coming-soon-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(2px);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    opacity: 0;
+    transition: opacity 0.3s ease;
+
+    font-family: 'DM Serif Text', serif;
+    font-size: 1.1rem;
+    letter-spacing: 0.04em;
+    color: #111;
+    border-radius: 12px;
+}
+
+.coming-soon:hover .coming-soon-overlay {
+    opacity: 1;
+}
+
+.coming-soon:hover img {
+    transform: scale(1.03);
+}
+
+.coming-soon img {
+    cursor: default;
+}
+
+.coming-soon .project-title:hover {
+    color: inherit;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* ----------------------------------------------------
+   FOOTER
+---------------------------------------------------- */
+
+.site-footer {
+    background-color: #6d1b26; 
+    color: #f8f6f6;
+    padding: 2.5rem 4.5rem 2.5rem;
+    margin-top: 5rem;
+    font-family: 'Inter', sans-serif;
+    width: 100vw;
+    margin-left: calc(50% - 50vw);
+    margin-right: calc(50% - 50vw);
+}
+
+.footer-content {
+    display: flex;
+    justify-content: none;
+    align-items: flex-start;
+    gap: 3rem;
+}
+
+/* LEFT */
+.footer-left h3,
+.footer-right h3 {
+    font-family: 'DM Serif Text', serif;
+    font-size: 1.2rem;
+    margin-bottom: .6rem;
+}
+
+.footer-left p a,
+.footer-right a {
+    color: #ffe9e9;
+    text-decoration: none;
+    transition: opacity 0.2s ease;
+    font-size: 0.9rem;
+}
+
+.footer-left p a:hover,
+.footer-right a:hover {
+    opacity: 0.7;
+}
+
+/* RIGHT */
+.footer-nav {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-nav li {
+    margin-bottom: .3rem;
+    font-size: 0.9rem;
+}
+
+/* BOTTOM COPYRIGHT */
+.footer-bottom {
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 0.8rem;
+    opacity: 0.8;
+}
+
+/* ----------------------------------------------------
+   RESPONSIVE BREAKPOINTS
+---------------------------------------------------- */
+
+@media(max-width: 768px) {
+    .hero h1 {
+        font-size: 2.2rem;
+    }
+
+    nav a {
+        margin-left: 1rem;
+    }
+}
