@@ -112,13 +112,11 @@ nav a:hover {
 .img-wrapper {
     width: 100%;
     overflow: hidden;
-    border-radius: 12px;     
 }
 
 .img-wrapper img {
     width: 100%;
     display: block;
-    border-radius: 12px;     
     transition: transform 0.5s ease;
     cursor: pointer;
 }
@@ -147,7 +145,7 @@ nav a:hover {
 .project-date {
     font-family: 'DM Serif Text', serif;
     font-size: 1.1rem;
-    color: black; /* can change this color if u want to */
+    color: black; /* can change this color if I want to */
 }
 
 .project-description {
@@ -179,7 +177,6 @@ nav a:hover {
     font-size: 1.1rem;
     letter-spacing: 0.04em;
     color: #111;
-    border-radius: 12px;
 }
 
 .coming-soon:hover .coming-soon-overlay {
